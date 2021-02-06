@@ -1,0 +1,207 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+      body {
+      font-family: 'Montserrat', 'Poppins', sans-serif;
+      font-size: 1.8rem; 
+      font-weight: 400;
+      line-height: 1.4;
+      color: #3B3C36;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    @media (max-width: 475px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #3D2B1F;
+    }
+
+    img {
+      display: block;
+      width: 50%;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #A9B2C3;
+    }
+
+    .nav-list {
+      display: flex;
+      margin-right: 20px;
+    }
+
+    .nav-list a {
+      display: block;
+      font-size: 2rem;
+      padding: 0 2rem;
+    }
+
+    .welcome-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-color: #FFE4C4;
+      background-image: linear-gradient(60deg, grey, 0%, grey 100%);
+    }
+
+    /* Projects section */
+
+    .projects-info {
+      text-align: center;
+      padding: 10rem 2rem;
+      background: #F5F5DC;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 4rem;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      margin-bottom: 6rem;
+    }
+
+    .image {
+      height: 200px;
+      width: 400px;
+      object-fit: cover;
+    }
+
+    /* Contact section */
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 80vh;
+      padding: 0 2rem;
+      background: #FFEBCD;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 980px;
+      margin-top: 4rem;
+      flex-wrap: wrap;
+    }
+
+    .details {
+      font-size: 2.4rem;
+      text-shadow: 2px 2px 1px #1f1f1f;
+      transition: transform 0.3s ease-out;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    /* Footer */
+
+    footer {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 2rem;
+      background: gray;
+      border-top: 4px solid #BFAFB2;
+    }
+
+    .work-image {
+      background-image: url("https://steelcase-res.cloudinary.com/image/upload/c_fill,dpr_auto,q_70,h_656,w_1166/v1583265056/www.steelcase.com/2020/03/03/20-0136082-CROP.jpg");
+      background-color: #E3DAC9;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    </style>
+  </head>
+    <body>
+        <nav id="navbar" class="nav">
+          <ul class="nav-list">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="welcome-section" class="welcome-info">
+          <h1>I am Elcamino</h1>
+          <p class="welcome-info-2">a programmer and web developer</p>
+        </div>
+        <div id="projects" class="projects-info">
+          <h2>These are some of my projects</h2>
+          <div class="projects-grid">
+            <div>
+              <a href="https://elcamin0.github.io/bj-habibie-tribute-page/" target="_blank" class="project-tile">
+              <img class="image" src="https://github.com/Elcamin0/personal-portofolio/blob/main/images/tirubute_page.png?raw=true" alt="project">
+              <p class="project-title">Tribute Page</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://elcamin0.github.io/survey-form/" target="_blank">
+              <img class="image" src="https://github.com/Elcamin0/personal-portofolio/blob/main/images/survey_form.png?raw=true" alt="project"/>
+              <p>Survey Form</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://elcamin0.github.io/product-landing-page/" target="_blank">
+              <img class="image" src="https://github.com/Elcamin0/personal-portofolio/blob/main/images/product_landing_page.png?raw=true" alt="project"/>
+              <p>Product Landing Page</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://elcamin0.github.io/technical-documentation-page/" target="_blank">
+              <img class="image" src="https://github.com/Elcamin0/personal-portofolio/blob/main/images/documentation_page.png?raw=true" alt="project"/>
+              <p>Technical Documentation Page</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="contact-info">
+          <div>
+            <h1>Contact me</h1>
+          </div>
+          <div class="links">
+            <a href="https://www.facebook.com/Dick.Eliezer" target="_blank" class="details"><i class="fab fa-facebook-square"></i> Facebook</a>
+            <a id="profile-link" href="https://github.com/Elcamin0" target="_blank" class="details"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:example@example.com" class="details"><i class="fas fa-at"></i> Send a mail</a>
+            <a href="https://twitter.com/dceliezeer" target="_blank" class="details"><i class="fab fa-twitter"></i> Twitter </a>
+          </div>
+        </div>
+        <footer>
+          <p>
+            &copy; Created for
+            freeCodeCamp 
+          </p>
+        </footer>
+    </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
